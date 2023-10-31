@@ -9,7 +9,7 @@ export default class Validator {
   }
 
   number() {
-    const validator = (value) => typeof value === ('number' || 'bigint');
+    const validator = (value) => typeof value === 'number' || 'bigint';
     return new NumberSchema([validator]);
   }
 
